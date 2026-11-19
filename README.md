@@ -1,12 +1,21 @@
-# Assignment 1
+# Assignment 1 - Food Queue and Information Tracker
 
-You will only need one file, ie, your node module, for this assignment.
+## Project Description
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
+This node module is used to simulate a canteen and the various stalls, allowing the user to check the queue for a stalls, update data and more, with mock data included.
 
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
+## Functions
 
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+1. addStall(stallName, stallCuisine) - Adds a new stall with a name, cuisine and set to be closed.
+2. getAllStalls() - Displays a list of all the stalls in the canteen.
+3. getOneStall(stallName) - Searches through and finds the stall that matches the name entered in.
+4. updateStallName(stallName, newStallName) - Updates the stall name of an existing stall in the canteen.
+5. updateStallCuisine(stallName, newStallCuisine) - Updates the stall cuisine of an existing stall in the canteen.
+6. updateStallStatus(stallName) - Updates the stall status of an existing stall in the canteen, opening a closed stall and closing an opened stall only if it has no one left in queue.
+7. removeStall(StallName) - Removes an existing stall in the canteen.
+8. getAllStallQueue() - Gets the queue number of all the stalls in the canteen.
+9. getOneStallQueue() - Searches through and finds the stall that matches the name entered in, getting the queue number for that stall.
+10. updateStallQueue(stallName, newQueueNum) - Updates the stall queue and changes the number
 
-# References
-Provide the references that you have used to support your assignment. 
+## References
+[NYP North Canteen - Food Ordering System](https://smartfoodp.com/smartSG-bs/scanCodeOrder/boothList.htm?sgId=127)
